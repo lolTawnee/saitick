@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор идей по сенсорике</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <section class="idea-form-section">
+            <h2>Генерация идей</h2>
+            <p for="idea-prompt">Введите тему или вопрос:</p>
+            <form id="idea-form">
+                <input type="text" id="idea-prompt1" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
+                <input type="text" id="idea-prompt2" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
+            </form>
+            <button id="idea-button" onclick="generete()">Генерировать идею</button>
+            <p id ="random-idea">Случайная идея</p>
+            <div id="idea-result" class="idea-result">
+               <table id="answer">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                </tr>
+               </table>
+            </div>
+        </section>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
