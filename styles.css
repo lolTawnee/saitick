@@ -1,0 +1,121 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+#random-idea {
+    margin-left: 40%;
+    color: #b0b0b0; 
+}
+
+.idea-form-section {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.idea-form-section h2 {
+    font-size: 1.8em;
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+#idea-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#idea-form label {
+    font-size: 1.1em;
+    color: #b0b0b0;
+}
+
+#idea-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #444;
+    border-radius: 4px;
+    outline: none;
+    background-color: #333;
+    color: #e0e0e0; 
+}
+
+#idea-form input[type="text"]:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+#idea-button {
+    margin-top: 10px;
+    margin-left: 37%;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: green;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#idea-button:hover {
+    background-color: #7c7c7c;
+}
+
+/* Стили для блока с результатом */
+.idea-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #000000;
+    border: 1px solid #444; 
+    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+/* Стили для таблицы */
+#answer {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#answer td {
+    width: 33.33%; /* Разделение на три равные части */
+    border: 1px solid #444; /* Темная граница */
+    padding: 10px;
+    color: #ffffff; /* Светлый текст */
+}
