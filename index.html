@@ -15,19 +15,19 @@
                 <input type="text" id="idea-prompt1" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
                 <input type="text" id="idea-prompt2" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
             </form>
-            <button id="idea-button" onclick="generete()">Генерировать идею</button>
-            <p id ="random-idea">Случайная идея</p>
+            <button id="idea-button" onclick="generate()">Генерировать идею</button>
+            <p id="random-idea">Случайная идея</p>
             <div id="idea-result" class="idea-result">
                <table id="answer">
                 <tr>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
+                    <td id="columnA">A</td>
+                    <td id="columnB">B</td>
+                    <td id="columnC">C</td>
                 </tr>
                </table>
             </div>
         </section>
     </div>
-    <script src="/main.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
