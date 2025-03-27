@@ -119,3 +119,78 @@ header p {
     padding: 10px;
     color: #ffffff; /* Светлый текст */
 }
+/* Основные стили для контейнера input'ов */
+.input-container {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства между элементами */
+    gap: 20px; /* Расстояние между input'ами */
+    margin-bottom: 20px;
+}
+
+/* Стили для каждой группы input'ов */
+.input-group {
+    flex: 1; /* Равномерное распределение ширины */
+    max-width: 48%; /* Максимальная ширина для каждого input */
+}
+
+/* Стили для кнопок */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.prompt-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.prompt-button img {
+    width: 40px; /* Размер иконок */
+    height: 40px;
+    border-radius: 50%; /* Круглые иконки */
+    transition: transform 0.2s ease;
+}
+
+.prompt-button img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Стили для полей ввода */
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.first-level, .second-level {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.second-level button {
+    padding: 8px 12px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.second-level button:hover {
+    background: #444;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.back-button {
+    background: #555 !important;
+    margin-top: 5px;
+}
