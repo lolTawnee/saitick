@@ -10,12 +10,54 @@
     <div class="page-container">
         <section class="idea-form-section">
             <h2>Генерация идей</h2>
-            <p for="idea-prompt">Введите тему или вопрос:</p>
-            <form id="idea-form">
-                <input type="text" id="idea-prompt1" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
-                <input type="text" id="idea-prompt2" name="idea-prompt" placeholder="Например: Как исследовать вкусовые ощущения?" required>
-            </form>
-            <button id="idea-button" onclick="generate()">Генерировать идею</button>
+
+            <div class="input-container">
+                <!-- Левый блок -->
+                <div class="input-group left-input">
+                    <div class="first-level">
+                        <button type="button" class="prompt-button" data-category="hearing">
+                            <img src="image/photo_2_2025-02-25_12-41-01.jpg" alt="Слух">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="vision">
+                            <img src="image/photo_1_2025-02-25_12-41-01.jpg" alt="Зрение">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="brain">
+                            <img src="image/logo_with_caption__sensory_neuro.webp" alt="Мозг">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="smell">
+                            <img src="image/photo_3_2025-02-25_12-41-01.jpg" alt="Обоняние">
+                        </button>
+                    </div>
+                    <div class="second-level hidden" data-current-category="">
+                        <!-- Сюда будут добавляться подкатегории -->
+                    </div>
+                    <input type="text" id="idea-prompt1" placeholder="Например: Как исследовать вкусовые ощущения?" required>
+                </div>
+
+                <!-- Правый блок -->
+                <div class="input-group right-input">
+                    <div class="first-level">
+                        <button type="button" class="prompt-button" data-category="hearing">
+                            <img src="image/photo_2_2025-02-25_12-41-01.jpg" alt="Слух">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="vision">
+                            <img src="image/photo_1_2025-02-25_12-41-01.jpg" alt="Зрение">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="brain">
+                            <img src="image/logo_with_caption__sensory_neuro.webp" alt="Мозг">
+                        </button>
+                        <button type="button" class="prompt-button" data-category="smell">
+                            <img src="image/photo_3_2025-02-25_12-41-01.jpg" alt="Обоняние">
+                        </button>
+                    </div>
+                    <div class="second-level hidden" data-current-category="">
+                        <!-- Сюда будут добавляться подкатегории -->
+                    </div>
+                    <input type="text" id="idea-prompt2" placeholder="Например: Как исследовать вкусовые ощущения?" required>
+                </div>
+            </div>
+
+            <button id="idea-button">Генерировать идею</button>
             <p id="random-idea">Случайная идея</p>
             <div id="idea-result" class="idea-result">
                <table id="answer">
@@ -29,5 +71,6 @@
         </section>
     </div>
     <script type="module" src="main.js"></script>
+    <script type="module" src="generate_text.js"></script>
 </body>
 </html>
